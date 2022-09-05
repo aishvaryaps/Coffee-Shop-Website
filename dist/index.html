@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+     <script src="https://cdn.signalfx.com/o11y-gdi-rum/latest/splunk-otel-web.js" crossorigin="anonymous"></script>
+	
+	<script>
+	  SplunkRum.init({
+		  beaconUrl: 'https://rum-ingest.us1.signalfx.com/v1/rum',
+		  rumAuth: 'vBcEtLEXzi4Vnn5omEa59Q',
+		  app: 'Node_App'
+		});
+	</script> 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Drip Cafe - Home</title>
